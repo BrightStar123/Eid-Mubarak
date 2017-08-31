@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Eid Animation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script 
+src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <style>
+ body: {
+  font-size:150%;
+}
+header{
+  height:45px;
+  width:100%;
+  background-color: teal;
+  color:white;
+  font-size:16pt;
+  margin-bottom: 10px;
+}
+
+#main{
+  width:100%;
+  height:400px;
+  background: #1F8DD6;
+  color:white;
+  font-size:150%;
+}
+
+footer{
+  margin-top: 10px;
+  height:30px;
+  background-color:fuchsia;
+  color:white;
+  font-size:16pt;
+}
+p{background-color:green;
+color:white;
+margin-top:10px;
+text-align:center;
+font-size:18pt;}
+/* Main styles */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.box-with-text {
+  background-image: -webkit-linear-gradient(orange 20%, white 20%,red,black,fuchsia,green,maroon);
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: 100% 50px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: stripes 2s linear infinite;
+  animation: stripes 2s linear infinite;
+}
+
+@-webkit-keyframes stripes {
+  100% {
+    background-position: 0 -50px;
+  }
+}
+
+@keyframes stripes {
+  100% {
+    background-position: 0 -50px;
+  }
+}
+/* Other stuff */
+body {
+  overflow: hidden;
+  background: #000;
+  color: #FFF;
+}
+
+.box-with-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  white-space: nowrap;
+  text-align: center;
+  text-transform: uppercase;
+  font: bold 18vmax/.8 Open Sans, Impact;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.footer {
+margin-top:450px;
+}
+mark {
+color:red;}
+
+ </style>
+ </head>
+ <body>
+ <div class='container'>
+ <div data-anijs="if: click, on:p, do: swing animated, to: #main"></div>
+ <center><p> Hi, This is my animation. (Click here)</p></center>
+	  <!-- AniCollection.css library -->
+  
+    <!--Simple sentence
+    <header data-anijs="if: click, do: flipInX animated">
+     <center>   (Click here) And see the Effect</center>
+    </header>
+	-->
+    <div id="main">
+       
+	   <center><h1> By Bakhsh Al  baloshi. </h1>  </center>
+	  <div class="box-with-text">
+  Happy Eid
+</div>
+    </div>
+    <footer data-anijs="if:click, do: hinge animated, to: #main">
+       <center>  (Click here)<mark> And Now again </mark>(Click On Green Panel) </center>
+    </footer>
+  <!-- AniJS core library -->
+  <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+  
+  <!-- Include to use $addClass, $toggleClass or $removeClass -->
+  <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+
+  <!-- The scrollreveal helper
+  <script src="https://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>-->
+ </div>
+ </body>
+ </html>
